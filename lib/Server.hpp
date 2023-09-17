@@ -25,20 +25,20 @@ class Server
 
 		struct sockaddr_in						_sockAddr;
 		
-        //char	buffer[1024];
+        char	buffer[1024];
 		//std::vector<std::string>				inputs;
 		// std::vector<Client>						clients;
-		// std::vector<pollfd>						pollFd;
-		// std::vector<Channel>					channels;
+		std::vector<struct pollfd>						pollFd;
 		//std::map<std::string, void(Server::*)(Client &client)> commands;
+		// std::vector<Channel>					channels;
 
 		Server &operator=( const Server &src);
 		Server( const Server &src );
 		Server( char **av );
 		~Server( void );
 
-		void start( void );
-        void connection( void );
+		void Start( void );
+		void Commands(int clientFd, std::string command);
 
 };
 

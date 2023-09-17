@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   commands.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eryilmaz <eryilmaz@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/28 13:49:46 by eryilmaz          #+#    #+#             */
-/*   Updated: 2023/08/28 13:49:47 by eryilmaz         ###   ########.tr	      */
+/*   Created: 2023/09/17 17:46:00 by eryilmaz          #+#    #+#             */
+/*   Updated: 2023/09/17 17:46:01 by eryilmaz         ###   ########.tr	      */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../lib/Server.hpp"
-
-int main(int index __attribute((unused)), char **str)
-{
-    if(str[1] == NULL || str[2] == NULL)
-    {
-        std::cerr << RED << "Usage: ./ircserv [port] [password]" << RESET << std::endl;
-        return (1);
-    }
-    Server main_server(str);
-    main_server.Start();
-    return (0);
-}
+// burda kaldık komutları buraya yazıcaz
+#ifndef COMMANDS_HPP
+# define COMMANDS_HPP
+# include "Server.hpp"
+join_command( Client &client )
+#endif 
