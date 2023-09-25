@@ -1,4 +1,4 @@
-NAME	= ft_irc
+NAME	= ircserv
 CC		= c++
 FLAGS	=  -Wall -Wextra -Werror -std=c++98
 RM		= rm -rf
@@ -15,7 +15,7 @@ all: $(NAME)
 
 $(NAME):
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) ./src/*.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) ./src/*.cpp ./src/commands/* -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:

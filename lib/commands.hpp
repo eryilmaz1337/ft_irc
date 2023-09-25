@@ -10,9 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// burda kaldık komutları buraya yazıcaz
-#ifndef COMMANDS_HPP
-# define COMMANDS_HPP
-# include "Server.hpp"
-join_command( Client &client )
-#endif 
+// #ifndef COMMANDS_HPP
+// # define COMMANDS_HPP
+// # include "Client.hpp"
+// /*-------------JOIN------------------*/
+// int	 findChannel( void );
+// void join_command( Client &client );
+// /*-------------commands--------------*/
+// void join_command( Client &client );
+// void nick_command( Client &client );
+// void user_command( Client &client );
+// void pass_command( Client &client );
+// void kick_command( Client &client );
+// void part_command( Client &client );
+// void ping_command( Client &client );
+// void privmsg_command( Client &client );
+// void notice_command( Client &client );
+// void mode_command( Client &client );
+// void who_command( Client &client );
+// void quit_command( Client &client );
+// void cap_command( Client &client );
+
+// #endif

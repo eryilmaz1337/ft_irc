@@ -20,6 +20,6 @@ int main(int index __attribute((unused)), char **str)
         return (1);
     }
     Server main_server(str);
-    main_server.Start();
+    main_server.start();
     return (0);
 }
